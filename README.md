@@ -30,7 +30,23 @@ Unemployment Matric Reader is a project aimed at analyzing and visualizing matri
 - Power BI
 
 ## Contributors
-- [Your Name]
+## Contributors
+- Colleen Malatji  
+  <a href="https://www.linkedin.com/in/colleen-malatji-25281a17b/" target="_blank"><i class="fab fa-linkedin"></i></a>
+  <a href="https://github.com/C01133n" target="_blank"><i class="fab fa-github"></i></a>
+- Kopano Maluleke  
+  <a href="https://www.linkedin.com/in/kopano-maluleke/" target="_blank"><i class="fab fa-linkedin"></i></a>
+  <a href="https://github.com/kopano-profile" target="_blank"><i class="fab fa-github"></i></a>
+- Sinoviyo Gcanga  
+  <a href="https://www.linkedin.com/in/sinovuyo-gcanga-b1b035189/" target="_blank"><i class="fab fa-linkedin"></i></a>
+  <a href="https://github.com/SinovuyoG" target="_blank"><i class="fab fa-github"></i></a>
+- Zainap Van Blerck  
+  <a href="https://www.linkedin.com/in/zainap-van-blerck-928277251/" target="_blank"><i class="fab fa-linkedin"></i></a>
+  <a href="https://github.com/Zainap16" target="_blank"><i class="fab fa-github"></i></a>
+- Shaqeel Less  
+  <a href="https://www.linkedin.com/in/shaqeel-less-11979a186/" target="_blank"><i class="fab fa-linkedin"></i></a>
+  <a href="https://github.com/MogammadShaqeelless16" target="_blank"><i class="fab fa-github"></i></a>
+
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
