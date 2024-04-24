@@ -1,4 +1,5 @@
 # Unemployment Matric Reader
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-WLAvnyFkDD50QidYBXqawW1Xu/AyH9RSmA9BQgMOf28ggrTgL0j7s7JgMLs3+oH2FGo1L/PIcCIxqzR6G7or5A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 ![Unemployment Matric Reader](https://github.com/Zainap16/Unemployment_Matric_Reader/assets/54390756/3410b958-1142-4cde-ac3e-d24273fb92c3)
 
@@ -29,7 +30,6 @@ Unemployment Matric Reader is a project aimed at analyzing and visualizing matri
   - NumPy
 - Power BI
 
-## Contributors
 ## Contributors
 - Colleen Malatji  
   <a href="https://www.linkedin.com/in/colleen-malatji-25281a17b/" target="_blank"><i class="fab fa-linkedin"></i></a>
