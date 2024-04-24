@@ -32,20 +32,21 @@ Unemployment Matric Reader is a project aimed at analyzing and visualizing matri
 
 ## Contributors
 - Colleen Malatji  
-  <a href="https://www.linkedin.com/in/colleen-malatji-25281a17b/" target="_blank"><i class="fab fa-linkedin"></i></a>
-  <a href="https://github.com/C01133n" target="_blank"><i class="fab fa-github"></i></a>
+  [![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/colleen-malatji-25281a17b/)
+  [![GitHub](https://img.shields.io/badge/-GitHub-black?style=flat-square&logo=github)](https://github.com/C01133n)
 - Kopano Maluleke  
-  <a href="https://www.linkedin.com/in/kopano-maluleke/" target="_blank"><i class="fab fa-linkedin"></i></a>
-  <a href="https://github.com/kopano-profile" target="_blank"><i class="fab fa-github"></i></a>
+  [![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/kopano-maluleke/)
+  [![GitHub](https://img.shields.io/badge/-GitHub-black?style=flat-square&logo=github)](https://github.com/kopano-profile)
 - Sinoviyo Gcanga  
-  <a href="https://www.linkedin.com/in/sinovuyo-gcanga-b1b035189/" target="_blank"><i class="fab fa-linkedin"></i></a>
-  <a href="https://github.com/SinovuyoG" target="_blank"><i class="fab fa-github"></i></a>
+  [![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/sinovuyo-gcanga-b1b035189/)
+  [![GitHub](https://img.shields.io/badge/-GitHub-black?style=flat-square&logo=github)](https://github.com/SinovuyoG)
 - Zainap Van Blerck  
-  <a href="https://www.linkedin.com/in/zainap-van-blerck-928277251/" target="_blank"><i class="fab fa-linkedin"></i></a>
-  <a href="https://github.com/Zainap16" target="_blank"><i class="fab fa-github"></i></a>
+  [![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/zainap-van-blerck-928277251/)
+  [![GitHub](https://img.shields.io/badge/-GitHub-black?style=flat-square&logo=github)](https://github.com/Zainap16)
 - Shaqeel Less  
-  <a href="https://www.linkedin.com/in/shaqeel-less-11979a186/" target="_blank"><i class="fab fa-linkedin"></i></a>
-  <a href="https://github.com/MogammadShaqeelless16" target="_blank"><i class="fab fa-github"></i></a>
+  [![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/shaqeel-less-11979a186/)
+  [![GitHub](https://img.shields.io/badge/-GitHub-black?style=flat-square&logo=github)](https://github.com/MogammadShaqeelless16)
+
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
