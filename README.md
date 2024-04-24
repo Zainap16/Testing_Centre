@@ -1,6 +1,7 @@
 # Unemployment Matric Reader
 
-![Unemployment Matric Reader Logo](logo.png)
+![Uploading Unemployment Matric Reader.png…]()
+
 
 ## Overview
 Unemployment Matric Reader is a project aimed at analyzing and visualizing matriculation results for both the current year and previous year to understand unemployment trends among matriculants. The project utilizes MySQL for data storage, Python for data processing and analysis, and Power BI for visualization.
