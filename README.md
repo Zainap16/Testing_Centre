@@ -21,7 +21,7 @@ Unemployment Matric Reader is a project aimed at analyzing and visualizing matri
 1. **MySQL**: [Download MySQL](https://www.mysql.com/downloads/) and follow installation instructions.
 2. **Python**: Install Python from [Python.org](https://www.python.org/downloads/) or using a package manager like Anaconda.
 3. **Power BI**: [Download Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop/) and install it on your system.
-4. You need to run the follow  pip install openpyxl matplotlib pandas
+4. You need to run the follow  pip install openpyxl matplotlib pandas psycopg2-binary
 
 ## Dependencies
 - MySQL
