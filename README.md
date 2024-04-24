@@ -47,7 +47,6 @@ Unemployment Matric Reader is a project aimed at analyzing and visualizing matri
   <a href="https://www.linkedin.com/in/shaqeel-less-11979a186/" target="_blank"><i class="fab fa-linkedin"></i></a>
   <a href="https://github.com/MogammadShaqeelless16" target="_blank"><i class="fab fa-github"></i></a>
 
-
 ## License
 This project is licensed under the [MIT License](LICENSE).
 
