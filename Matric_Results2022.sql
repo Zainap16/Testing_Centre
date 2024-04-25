@@ -1,0 +1,1 @@
+SELECT * FROM EEE.Matric_Results2023;
