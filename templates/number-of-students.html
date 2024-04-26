@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Number of Students Page Content Here -->
+<div class="container mt-4">
+    <div class="text-center">
+        <h1>Number of Students per School</h1>
+        <!-- Include the chart for number of students per school here -->
+        {{ school_student_chart|safe }}
+    </div>
+</div>
+{% endblock %}
