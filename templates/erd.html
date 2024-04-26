@@ -5,10 +5,8 @@
 {% endblock %}
 
 {% block content %}
-<div class="container mt-4">
-    <h1>Entity–relationship model</h1>
-    <div id="pdf-container">
-        <embed src="{{ url_for('static', filename='ERD.pdf') }}" type="application/pdf" />
-    </div>
+<h1>Entity–relationship model</h1>
+<div id="pdf-container" style="width: 100%; height: 100%;">
+    <embed src="{{ url_for('static', filename='ERD.pdf') }}" type="application/pdf" style="width: 100%; height: 100%;" />
 </div>
 {% endblock %}
