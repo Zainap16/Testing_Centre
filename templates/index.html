@@ -1,49 +1,82 @@
-{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Display</title>
+    <!-- Bootstrap CSS from Bootswatch Lux theme -->
+    <link rel="stylesheet" href="https://bootswatch.com/5/lux/bootstrap.min.css">
+    <!-- Plotly CDN -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <!-- Navigation menu bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Data Display</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#school-student-chart">Students per School</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#district-charts">Employment Status per District</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-{% block content %}
-<!-- Intro section -->
-
-<!-- Logo section -->
-<div class="text-center mt-4">
-    <img src="logo.png" alt="Unemployment Matric Reader Logo" class="logo">
-</div>
-<div class="text-center">
-    <h1>Welcome to Unemployment Matric Reader</h1>
-    <p>This application provides insights into unemployment rates and student data.</p>
-</div>
-
-<!-- Welcome message -->
-<div class="container mt-4">
-    <div class="text-center">
-        <h1>Welcome to Unemployment Matric Reader</h1>
-        <p>This app provides insights into employment status and student statistics per district.</p>
-        <p>Explore the options in the navigation menu to view the data.</p>
+<div id="district-charts" class="container mt-4">
+    <h2>Employment Status per District</h2>
+    <div class="row">
+        <div class="col-lg-6">
+            <select id="district-select" onchange="showChart()" class="form-select mb-3">
+                <option value="">Select District</option>
+                {% for district in district_charts_html %}
+                    <option value="{{ district }}">{{ district }}</option>
+                {% endfor %}
+            </select>
+        </div>
+    </div>
+    <div class="row">
+        {% for district, chart_html in district_charts_html.items() %}
+        <div class="col-lg-6">
+            <div class="d-flex justify-content-center">
+                <div id="{{ district }}-chart" class="district-chart" style="display: none;">{{ chart_html|safe }}</div>
+            </div>
+        </div>
+        {% endfor %}
     </div>
 </div>
 
-<!-- Team section -->
-<div class="container mt-4">
-    <div class="text-center">
-        <h2>Our Team</h2>
-        <p>Meet the dedicated individuals behind this project:</p>
-        <ul class="list-unstyled">
-               <li><span class="icon"><i class="fas fa-user-tie"></i></span> Colleen Malatji  <a href="https://www.linkedin.com/in/colleen-malatji-25281a17b/" target="_blank"><i class="fab fa-linkedin"></i></a> <a href="https://github.com/C01133n" target="_blank"><i class="fab fa-github"></i></a></li>
-            <li><span class="icon"><i class="fas fa-user-tie"></i></span> Kopano Maluleke  <a href="https://github.com/KopanoMaluleke" target="_blank"><i class="fab fa-linkedin"></i></a> <a href="https://github.com/kopano-profile" target="_blank"><i class="fab fa-github"></i></a></li>
-            <li><span class="icon"><i class="fas fa-user-tie"></i></span> Sinoviyo  Gcanga  <a href="https://www.linkedin.com/in/sinovuyo-gcanga-b1b035189/" target="_blank"><i class="fab fa-linkedin"></i></a> <a href="https://github.com/SinovuyoG" target="_blank"><i class="fab fa-github"></i></a></li>
-            <li><span class="icon"><i class="fas fa-user-tie"></i></span> Zainap Van Blerck  <a href="https://www.linkedin.com/in/zainap-van-blerck-928277251/" target="_blank"><i class="fab fa-linkedin"></i></a> <a href="https://github.com/Zainap16" target="_blank"><i class="fab fa-github"></i></a></li>
-            <li><span class="icon"><i class="fas fa-user-tie"></i></span> Shaqeel Less  <a href="https://www.linkedin.com/in/shaqeel-less-11979a186/" target="_blank"><i class="fab fa-linkedin"></i></a> <a href="https://github.com/MogammadShaqeelless16" target="_blank"><i class="fab fa-github"></i></a></li>
-        </ul>
-    </div>
-</div>
 
-<!-- Open source message -->
-<div class="container mt-4">
-    <div class="text-center">
-        <p>This project is open source and contributions are welcome. Visit our GitHub repository to learn more.</p>
-        <a href="https://github.com/YourGitHubUsername/Unemployment_Matric_Reader" class="btn btn-secondary">GitHub Repository</a>
+    <div class="container mt-4">
+        <h1>Data Display</h1>
+        <div id="school-student-chart" class="mb-4">
+            <h2>Number of Students per School</h2>
+            {{ school_student_chart|safe }}
+        </div>
     </div>
-</div>
 
-<!-- Bootstrap JS and any additional scripts -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-{% endblock %}
+    <script>
+        function showChart() {
+            var select = document.getElementById("district-select");
+            var district = select.options[select.selectedIndex].value;
+
+            // Hide all district charts
+            var districtCharts = document.getElementsByClassName("district-chart");
+            for (var i = 0; i < districtCharts.length; i++) {
+                districtCharts[i].style.display = "none";
+            }
+
+            // Show the chart for the selected district
+            var chartDiv = document.getElementById(district + "-chart");
+            chartDiv.style.display = "block";
+        }
+    </script>
+</body>
+</html>

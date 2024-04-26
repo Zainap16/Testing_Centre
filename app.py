@@ -38,15 +38,5 @@ def index():
     except Exception as e:
         return str(e)
 
-@app.route('/employment-status')
-def employment_status():
-    # Add logic to fetch and display employment status data
-    return render_template('employment-status.html')
-
-@app.route('/number-of-students')
-def number_of_students():
-    # Add logic to fetch and display number of students data
-    return render_template('number-of-students.html')
-
 if __name__ == '__main__':
     app.run(debug=True)
