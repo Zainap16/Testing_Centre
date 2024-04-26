@@ -7,12 +7,14 @@ app = Flask(__name__)
 # Define your database query
 DB_QUERY = "SELECT * FROM schools"
 
+# Define the maximum number of rows to fetch from the database
+MAX_ROWS = 1000
 
 @app.route('/')
 def index():
     try:
-        # Fetch data from the database
-        df = fetch_data_from_database(DB_QUERY)
+        # Fetch data from the database with a limit
+        df = fetch_data_from_database(DB_QUERY, limit=MAX_ROWS)
 
         if df is None:
             raise Exception("Failed to fetch data from the database")
@@ -27,12 +29,11 @@ def index():
     except Exception as e:
         return str(e)
 
-
 @app.route('/number-of-students')
 def number_of_students():
     try:
-        # Fetch data from the database
-        df = fetch_data_from_database(DB_QUERY)
+        # Fetch data from the database with a limit
+        df = fetch_data_from_database(DB_QUERY, limit=MAX_ROWS)
 
         if df is None:
             raise Exception("Failed to fetch data from the database")
@@ -44,6 +45,7 @@ def number_of_students():
         return render_template('number-of-students.html', school_student_chart=school_student_chart_html)
     except Exception as e:
         return str(e)
+
 
 
 @app.route('/powerBi')
