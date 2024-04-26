@@ -59,6 +59,13 @@ def powerbi():
     except Exception as e:
         return str(e)
 
+@app.route('/erd')
+def erd():
+    try:
+        # Render the template for Power BI
+        return render_template('erd.html')
+    except Exception as e:
+        return str(e)
 
 @app.route('/employment-status')
 def employment_status():
