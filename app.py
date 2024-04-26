@@ -10,6 +10,9 @@ DB_QUERY = "SELECT * FROM schools"
 # Define the maximum number of rows to fetch from the database
 MAX_ROWS = 1000
 
+# Create the Flask application object
+app = Flask(__name__)
+
 @app.route('/')
 def index():
     try:
@@ -76,4 +79,4 @@ def employment_status():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
